@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Midakushoo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root { --bg-deep:#050404; --gold:#c9a24b; --gold-bright:#e8c874; --gold-dim:#7a6530; --ink:#e9e2d0; --ink-dim:#a89f8a; --line:rgba(201,162,75,0.35); }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; background: radial-gradient(ellipse at 50% -10%, rgba(201,162,75,0.10), transparent 55%), radial-gradient(ellipse at 50% 110%, rgba(201,162,75,0.06), transparent 60%), var(--bg-deep); color:var(--ink); font-family:'Cormorant Garamond', serif; display:flex; justify-content:center; padding:56px 20px 72px; }
+  .page { width:100%; max-width:480px; }
+  .crest { display:flex; justify-content:center; margin-bottom:18px; }
+  .crest svg { width:64px; height:64px; }
+  h1 { font-family:'Cinzel', serif; font-weight:700; font-size:clamp(28px,7vw,38px); letter-spacing:0.08em; text-align:center; margin:0 0 6px; color:var(--gold-bright); text-shadow:0 0 18px rgba(201,162,75,0.25); }
+  .subtitle { text-align:center; font-size:18px; font-style:italic; color:var(--ink-dim); margin:0 0 28px; }
+  .divider { display:flex; align-items:center; gap:14px; margin:0 0 34px; }
+  .divider .bar { flex:1; height:1px; background:linear-gradient(90deg,transparent,var(--line),transparent); }
+  .divider svg { width:18px; height:18px; flex-shrink:0; }
+  .links { display:flex; flex-direction:column; gap:16px; }
+  a.link { position:relative; display:flex; align-items:center; gap:16px; padding:18px 20px; text-decoration:none; color:var(--ink); background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(0,0,0,0.15)); border:1px solid var(--line); border-radius:2px; }
+  a.link:hover { border-color:var(--gold); }
+  .icon { width:26px; height:26px; flex-shrink:0; color:var(--gold); }
+  .icon svg { width:100%; height:100%; }
+  .label-group { flex:1; min-width:0; }
+  .label { font-family:'Cinzel', serif; font-size:16px; letter-spacing:0.04em; color:var(--ink); margin:0 0 2px; }
+  .desc { font-size:15px; color:var(--ink-dim); margin:0; }
+  .chev { color:var(--gold-dim); flex-shrink:0; }
+  .placeholder-note { font-size:13px; color:var(--gold-dim); text-align:center; margin-top:10px; font-style:italic; }
+  footer { text-align:center; margin-top:48px; font-size:14px; color:var(--gold-dim); }
+  footer .sig { font-family:'Cinzel', serif; font-size:13px; color:var(--gold); margin-top:8px; letter-spacing:0.1em; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="crest">
+    <svg viewBox="0 0 64 64" fill="none"><path d="M32 4 L40 20 L56 10 L48 28 L60 32 L48 36 L56 54 L40 44 L32 60 L24 44 L8 54 L16 36 L4 32 L16 28 L8 10 L24 20 Z" stroke="#c9a24b" stroke-width="1.2" fill="none" opacity="0.85"/><circle cx="32" cy="32" r="5" fill="#c9a24b" opacity="0.9"/></svg>
+  </div>
+  <h1>Midakushoo</h1>
+  <p class="subtitle">Wo Dunkelheit auf Gold trifft</p>
+  <div class="divider">
+    <span class="bar"></span>
+    <svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L14 10 L22 12 L14 14 L12 22 L10 14 L2 12 L10 10 Z" fill="#c9a24b" opacity="0.8"/></svg>
+    <span class="bar"></span>
+  </div>
+  <div class="links">
+    <a class="link" href="#">
+      <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 6l1 14h14l1-14M9 6V4a3 3 0 016 0v2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="label-group"><p class="label">Midakushoo's Dark Kitchen</p><p class="desc">Das Kochbuch — jetzt bei Amazon</p></span>
+      <span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+    <a class="link" href="https://www.patreon.com/cw/Midakushoo_ZwischenWelten?l=de-DE" target="_blank" rel="noopener">
+      <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="15" cy="9" r="5"/><path d="M5 4v16" stroke-linecap="round"/></svg></span>
+      <span class="label-group"><p class="label">Zwischen Welten — Patreon</p><p class="desc">Podcast, Kunst & mehr</p></span>
+      <span class="chev"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+    </a>
+    <a class="link" href="https://www.tiktok.com/@midakushoo" target="_blank" rel="noopener">
+      <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 3v10.5a3.5 3.5 0 11-3.5-3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 3c0 3 2.2 5 5 5" stroke-linecap="round"/></svg></span>
+      <span class="label-group"><p
